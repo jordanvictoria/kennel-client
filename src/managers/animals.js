@@ -14,7 +14,7 @@ export const getAnimalById = (id) => {
       .then(res => res.json())
 }
 
-export const addAnimal = animal => {
+export const addAnimal = (animal) => {
   return fetch("http://localhost:8088/animals", {
       method: "POST",
       headers: {
